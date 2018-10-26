@@ -1,0 +1,6 @@
+endpoint: https://eu1.prisma.sh/nicolas-serrano-arevalo-1287c4/prisma-gram/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: typescript-client
+    output: ./generated/prisma-client/
