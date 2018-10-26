@@ -1,4 +1,13 @@
 type User {
   id: ID! @unique
   name: String!
+  email: String
+  photos: [Photo!]!
+}
+
+type Photo {
+  id: ID! @unique
+  caption: String!
+  private: Boolean! @default(value: "false")
+  author: User
 }
