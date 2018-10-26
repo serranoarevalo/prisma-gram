@@ -15,4 +15,10 @@ type Photo {
 type Query {
   getAllUsers: [User!]!
   getAllPhotos: [Photo!]!
+  photosByUser(id: String!): [Photo!]!
+}
+
+type Mutation {
+  createUser(name: String!): User
+  createPhoto(caption: String!, userID: String!): Photo
 }
